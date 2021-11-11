@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Presentation.AnnouncementsGUI">
+  <grid id="27dc6" binding="rootPanel" layout-manager="GridLayoutManager" row-count="6" column-count="9" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="879" height="762"/>
+    </constraints>
+    <properties>
+      <background color="-16745063"/>
+      <foreground color="-2698628"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <scrollpane id="c4aa5" binding="announceScrollPane">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="7" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-14795693"/>
+          <foreground color="-14795693"/>
+          <horizontalScrollBarPolicy value="31"/>
+          <verticalScrollBarPolicy value="20"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="e68ff" class="javax.swing.JTable" binding="announcementsTable">
+            <constraints/>
+            <properties>
+              <background color="-14472385"/>
+              <fillsViewportHeight value="true"/>
+              <foreground color="-2698628"/>
+              <gridColor color="-16745063"/>
+              <selectionBackground color="-3715543"/>
+              <selectionForeground color="-16777216"/>
+              <toolTipText value=""/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <scrollpane id="5d879" binding="messageScrollPane">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="7" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-14795693"/>
+          <foreground color="-2698628"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="37363" class="javax.swing.JTextPane" binding="textPaneMessage">
+            <constraints/>
+            <properties>
+              <background color="-14795693"/>
+              <foreground color="-2698628"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <vspacer id="31a0e">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="c3a9b">
+        <constraints>
+          <grid row="4" column="8" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <hspacer id="35436">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="7" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="524a6" class="javax.swing.JLabel" binding="fromDateLabel">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-14472385"/>
+          <font style="1"/>
+          <foreground color="-4332571"/>
+          <text value="Date from:"/>
+        </properties>
+      </component>
+      <component id="36fcc" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-2698628"/>
+          <font size="18" style="1"/>
+          <foreground color="-4332571"/>
+          <text value="Messages"/>
+        </properties>
+      </component>
+      <component id="19702" class="javax.swing.JTextField" binding="txtFldFromDate">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14795693"/>
+          <foreground color="-2698628"/>
+          <toolTipText value="(Ex: January 9, 2020 is entered as 2020-01-09)"/>
+        </properties>
+      </component>
+      <component id="93b4c" class="javax.swing.JLabel" binding="toDateLabel">
+        <constraints>
+          <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font style="1"/>
+          <foreground color="-4332571"/>
+          <text value="To:"/>
+        </properties>
+      </component>
+      <component id="d44c9" class="javax.swing.JTextField" binding="txtFldToDate">
+        <constraints>
+          <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14795693"/>
+          <foreground color="-2698628"/>
+          <toolTipText value="(Ex: January 9, 2020 is entered as 2020-01-09)"/>
+        </properties>
+      </component>
+      <component id="de811" class="javax.swing.JButton" binding="btnDate">
+        <constraints>
+          <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-3715543"/>
+          <text value="Search"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
